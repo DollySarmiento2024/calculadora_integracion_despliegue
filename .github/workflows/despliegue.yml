@@ -70,5 +70,5 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }} 
         
       - name: Push Docker image to Docker Hub 
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/calculadora_integracion_despliegue:${{ github.sha }} 
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/calculadora:${{ github.sha }} 
     
