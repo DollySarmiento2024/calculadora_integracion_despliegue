@@ -1,11 +1,11 @@
 {
     "require-dev": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "^11.5"
     },
 
     "autoload": {
         "psr-4": {
-            "App\\": "src"
+            "App_docker\\": "src"
         }
     }
 }

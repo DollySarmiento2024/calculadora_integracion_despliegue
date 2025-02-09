@@ -32,7 +32,7 @@
 
     <?php
     require_once __DIR__ . '/./src/Calculadora.php';
-    use App\Calculadora;
+    use App_docker\Calculadora;
     
 
     if (isset($_POST['calcular']) && $_POST['calcular'] == "Calcular") 
