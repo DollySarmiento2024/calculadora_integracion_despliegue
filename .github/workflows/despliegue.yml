@@ -61,7 +61,7 @@ jobs:
           ssh -o StrictHostKeyChecking=no $USERNAME@$HOST "sudo systemctl restart apache2"
        
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/hola-mundo-multilenguaje:${{ github.sha }} .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/calculadora-integracion-despliegue:${{ github.sha }} .
       
       - name: Log in to Docker Hub 
         uses: docker/login-action@v2 
